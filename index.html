@@ -9,8 +9,13 @@
 
     <script type="text/javascript">
       function inputFunction() {
-        var input = document.getElementsByClassName('vm-md-input');
-        return console.log('teste: ' + input);
+        var input = document.getElementById('vm-md-input').value.length;
+        if(input >= 1 ) {
+          input.setAttribute('class', 'mv-md-label-focus');
+          console.log('ativado');
+        } else {
+          return console.log('desativado');
+        }
       }
     </script>
 
@@ -28,7 +33,7 @@
         border-radius: 2px;
         box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
         padding: 16px;
-        margin: 30px   auto;
+        margin: 30px auto;
       }
     </style>
   </head>
@@ -41,7 +46,7 @@
       </div>
 
       <div class="vm-md-input-container">
-        <input class="vm-md-input vm-md-input-cor-primaria" type="text" name="name" value="" onblur="inputFunction()">
+        <input id="vm-md-input" class="vm-md-input vm-md-input-cor-primaria" type="text" onchange="inputFunction()">
         <label>Input opcional</label>
       </div>
 
