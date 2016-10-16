@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="/css/vm.css" media="screen" title="no title" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+    <script type="text/javascript">
+      function inputFunction() {
+        var input = document.getElementsByClassName('vm-md-input');
+        return console.log('teste: ' + input);
+      }
+    </script>
+
     <title>VM - MD</title>
 
     <style media="screen">
@@ -30,7 +37,16 @@
       <h2>Inputs</h2>
       <div class="vm-md-input-container">
         <input class="vm-md-input vm-md-input-cor-primaria" type="text" name="name" value="" required>
-        <label>Texto para o input</label>
+        <label>Input obrigatório</label>
+      </div>
+
+      <div class="vm-md-input-container">
+        <input class="vm-md-input vm-md-input-cor-primaria" type="text" name="name" value="" onblur="inputFunction()">
+        <label>Input opcional</label>
+      </div>
+
+      <div class="vm-md-input-container">
+        <input class="vm-md-input vm-md-input-cor-primaria" type="text" name="name" value="" placeholder="Texto para o input">
       </div>
     </div>
   </body>

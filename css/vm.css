@@ -15,10 +15,6 @@ body {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.vm-md-input-cor-primaria {
-  border-color:
-}
-
 /******************************************************************************/
 /*********************************INPUT****************************************/
 
@@ -26,19 +22,6 @@ body {
   margin: 25px 0;
   position: relative;
 }
-
-.vm-md-input-container label {
-  position: absolute;
-  top: 6px;
-  left: 3px;
-  bottom: 6px;
-  z-index: 1;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
-  transition: all 250ms ease;
-}
-
 
 .vm-md-input {
   background: transparent;
@@ -57,16 +40,28 @@ body {
   font-size: 16px;
 }
 
+.vm-md-input-container label {
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  bottom: 6px;
+  z-index: 1;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
 .vm-md-input:focus {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid rgba(0,0,0,0.51);
+  /*border-bottom: 2px solid rgba(0,0,0,0.51);*/
   margin-bottom: -1px;
 }
 
 .vm-md-input-cor-primaria:focus {
-  border-bottom-color: var(--cor-primaria);
+  border-bottom: 2px solid var(--cor-primaria);
 }
 
 .vm-md-input:focus ~ label {
@@ -77,4 +72,8 @@ body {
   -moz-transition: all 250ms ease;
   -o-transition: all 250ms ease;
   transition: all 250ms ease;
+}
+
+.vm-md-input:focus::-webkit-input-placeholder {
+  color: var(--cor-primaria);
 }
