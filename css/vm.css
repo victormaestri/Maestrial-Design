@@ -1,0 +1,80 @@
+:root {
+  --cor-primaria: #2196F3; //BLUE
+  --cor-secundaria: #FFC107; //AMBER
+}
+
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+  list-style: none;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.vm-md-input-cor-primaria {
+  border-color:
+}
+
+/******************************************************************************/
+/*********************************INPUT****************************************/
+
+.vm-md-input-container {
+  margin: 25px 0;
+  position: relative;
+}
+
+.vm-md-input-container label {
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  bottom: 6px;
+  z-index: 1;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+
+.vm-md-input {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(0,0,0,0.11);
+  /*-webkit-transition: all 140ms;*/
+  /*-moz-transition: all 140ms;*/
+  /*-o-transition: all 140ms;*/
+  /*transition: all 140ms;*/
+  position: relative;
+  z-index: 2;
+  height: 30pX;
+  padding: 0 3px;
+  font-size: 16px;
+}
+
+.vm-md-input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(0,0,0,0.51);
+  margin-bottom: -1px;
+}
+
+.vm-md-input-cor-primaria:focus {
+  border-bottom-color: var(--cor-primaria);
+}
+
+.vm-md-input:focus ~ label {
+  font-size: 10px;
+  color: var(--cor-primaria);
+  top: -12px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
