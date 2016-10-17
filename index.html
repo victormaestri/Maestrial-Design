@@ -9,13 +9,15 @@
 
     <script type="text/javascript">
       function inputFunction() {
-        var input = document.getElementById('vm-md-input').value.length;
+        var input = document.getElementById('usuario').getElementsByTagName('input')[0].value.length;
+        var label = document.getElementById('usuario').getElementsByTagName('label')[0];
+        // var inputContainer = document.getElementById('label');
         if(input >= 1 ) {
-          document.getElementById('label').className = 'vm-md-label-focus';
-          console.log('ativado');
+          label.className = 'vm-md-label-focus';
+          // console.log('ativado');
         } else {
-          document.getElementById('label').className = '';
-          return console.log('desativado');
+          label.className = '';
+          // console.log('desativado');
         }
       }
     </script>
@@ -41,14 +43,14 @@
   <body>
     <div class="demo">
       <h2>Inputs</h2>
-      <div class="vm-md-input-container">
-        <input class="vm-md-input vm-md-input-cor-primaria" type="text" name="name" value="" required>
-        <label>Input obrigatório</label>
+      <div id="usuario" class="vm-md-input-container">
+        <input class="vm-md-input vm-md-input-cor-primaria" type="text" onchange="inputFunction()">
+        <label>Usuário</label>
       </div>
 
       <div class="vm-md-input-container">
-        <input id="vm-md-input" class="vm-md-input vm-md-input-cor-primaria" type="text" onchange="inputFunction()">
-        <label id="label">Input opcional</label>
+        <input class="vm-md-input vm-md-input-cor-primaria" type="password" name="name" value="" required>
+        <label>Senha</label>
       </div>
 
       <div class="vm-md-input-container">
