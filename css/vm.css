@@ -56,7 +56,7 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
-  /*border-bottom: 2px solid rgba(0,0,0,0.51);*/
+  border-bottom: 2px solid rgba(0,0,0,0.51);
   margin-bottom: -1px;
 }
 
@@ -78,6 +78,13 @@ body {
   font-size: 10px;
   /*color: var(--cor-primaria);*/
   top: -12px !important;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.vm-md-input::-webkit-input-placeholder {
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
   -o-transition: all 250ms ease;
