@@ -74,6 +74,16 @@ body {
   transition: all 250ms ease;
 }
 
+.vm-md-label-focus {
+  font-size: 10px;
+  /*color: var(--cor-primaria);*/
+  top: -12px !important;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
 .vm-md-input:focus::-webkit-input-placeholder {
   color: var(--cor-primaria);
 }
