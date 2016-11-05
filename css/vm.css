@@ -1,6 +1,27 @@
 :root {
-  --primary-color: #2196F3; 
+  --primary-color: #2196F3;
+  --primary-color-hue50: #E3F2FD;
+  --primary-color-hue100: #BBDEFB;
+  --primary-color-hue200: #90CAF9;
+  --primary-color-hue300: #64B5F6;
+  --primary-color-hue400: #42A5F5;
+  --primary-color-hue600: #1E88E5;
+  --primary-color-hue700: #1976D2;
+  --primary-color-hue800: #1565C0;
+  --primary-color-hue900: #0D47A1;
+
   --accent-color: #FFC107;
+  --accent-color-hue50: #FFF8E1;
+  --accent-color-hue100: #FFECB3;
+  --accent-color-hue200: #FFE082;
+  --accent-color-hue300: #FFD54F;
+  --accent-color-hue400: #FFCA28;
+  --accent-color-hue600: #FFC107;
+  --accent-color-hue700: #FFB300;
+  --accent-color-hue800: #FFA000;
+  --accent-color-hue900: #FF8F00;
+
+  
 }
 
 * {
@@ -20,15 +41,93 @@ body {
 
 /******************************************************************************/
 /******************************************************************************/
-
-
+/******************************************************************************/
 /******************************************************************************/
 /********************************* COLORS CSS *********************************/
+.vm-md-primary-color {
+  background-color: var(--primary-color);
+  color: rgba(255, 255, 255, 255);
+}
+.vm-md-primary-color-hue50 {
+  background-color: var(--primary-color-hue50);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-primary-color-hue100 {
+  background-color: var(--primary-color-hue100);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-primary-color-hue200 {
+  background-color: var(--primary-color-hue200);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-primary-color-hue300 {
+  background-color: var(--primary-color-hue300);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-primary-color-hue400 {
+  background-color: var(--primary-color-hue400);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-primary-color-hue600 {
+  background-color: var(--primary-color-hue600);
+  color: rgba(255, 255, 255, 255);
+}
+.vm-md-primary-color-hue700 {
+  background-color: var(--primary-color-hue700);
+  color: rgba(255, 255, 255, 255);
+}
+.vm-md-primary-color-hue800 {
+  background-color: var(--primary-color-hue800);
+  color: rgba(255, 255, 255, 255);
+}
+.vm-md-primary-color-hue900 {
+  background-color: var(--primary-color-hue900);
+  color: rgba(255, 255, 255, 255);
+}
 
+.vm-md-accent-color {
+  background-color: var(--accent-color);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue50 {
+  background-color: var(--accent-color-hue50);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue100 {
+  background-color: var(--accent-color-hue100);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue200 {
+  background-color: var(--accent-color-hue200);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue300 {
+  background-color: var(--accent-color-hue300);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue400 {
+  background-color: var(--accent-color-hue400);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue600 {
+  background-color: var(--accent-color-hue600);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue700 {
+  background-color: var(--accent-color-hue700);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue800 {
+  background-color: var(--accent-color-hue800);
+  color: rgba(0, 0, 0, 0.87);
+}
+.vm-md-accent-color-hue900 {
+  background-color: var(--accent-color-hue900);
+  color: rgba(0, 0, 0, 0.87);
+}
 /******************************************************************************/
 /******************************************************************************/
-
-
+/******************************************************************************/
 /******************************************************************************/
 /*********************************INPUT****************************************/
 .vm-md-input-container {
@@ -73,8 +172,12 @@ body {
   margin-bottom: -1px;
 }
 
-.vm-md-input-cor-primaria:focus {
+.vm-md-input-primary-color:focus {
   border-bottom: 2px solid var(--primary-color);
+}
+
+.vm-md-input-accent-color:focus {
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .vm-md-input:focus ~ label {
@@ -109,14 +212,13 @@ body {
 }
 /******************************************************************************/
 /******************************************************************************/
-
-
+/******************************************************************************/
 /******************************************************************************/
 /*********************************TOOLBAR**************************************/
 .vm-md-header {
-  background: var(--primary-color);
   height: 64px;
   line-height: 64px;
+  padding: 0 24px;
 }
 /******************************************************************************/
 /******************************************************************************/
