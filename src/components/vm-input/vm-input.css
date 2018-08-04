@@ -1,0 +1,83 @@
+/******************************************************************************/
+/*********************************INPUT****************************************/
+.vm-md-input-container {
+  margin: 25px 0;
+  position: relative;
+}
+
+.vm-md-input {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(0,0,0,0.11);
+  position: relative;
+  z-index: 2;
+  height: 30px;
+  padding: 0 3px;
+  font-size: 16px;
+}
+
+.vm-md-input-container label {
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  bottom: 6px;
+  z-index: 1;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.vm-md-input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(0,0,0,0.51);
+  margin-bottom: -1px;
+}
+
+.vm-md-input:focus ~ label {
+  font-size: 12px;
+  top: -12px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.vm-md-label-focus {
+  font-size: 12px;
+  top: -12px !important;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.vm-md-input::-webkit-input-placeholder {
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.vm-md-input-primary-color:focus {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.vm-md-input-accent-color:focus {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.vm-md-input-primary-color:focus ~ label,
+.vm-md-input-primary-color:focus::-webkit-input-placeholder {
+  color: var(--primary-color);
+}
+.vm-md-input-accent-color:focus ~ label,
+.vm-md-input-accent-color:focus::-webkit-input-placeholder {
+  color: var(--accent-color);
+}
+/******************************************************************************/
+/******************************************************************************/
